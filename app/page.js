@@ -89,10 +89,11 @@ export default function Home() {
         {reveal ? (
           <AttentionSeeker effect="tada">
             <div className="flex flex-col ">
+                <h1 className="flex justify-center text-3xl mb-4">Entrainement {new Date().getDate()} décembre</h1>
               {workout.map((workout) => (
                 <div className="mb-4">
-                  <h1 className="text-2xl font-bold">{workout.title}</h1>
-                  <ul className="font-semibold">
+                  <h1 className="text-2xl font-semibold">{workout.title}</h1>
+                  <ul className="text-lg">
                     {workout.description.map((description) => (
                       <li>{description}</li>
                     ))}
