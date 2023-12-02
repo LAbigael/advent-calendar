@@ -101,7 +101,7 @@ export default function Home() {
         {reveal ? (
           <AttentionSeeker effect="tada">
             <div className="flex flex-col ">
-              <h1 className="flex flex-col items-center justify-center text-2xl font-bold mb-4">
+              <h1 className="flex flex-col text-center items-center justify-center text-xl font-bold mb-5">
                 <Image
                   className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
                   src="/gift.png"
@@ -114,8 +114,8 @@ export default function Home() {
               </h1>
               {workout.map((workout) => (
                 <div className="mb-4">
-                  <h1 className="text-xl font-semibold">{workout.title}</h1>
-                  <ul className="text-lg">
+                  <h1 className="text-lg font-semibold">{workout.title}</h1>
+                  <ul className="">
                     {workout.description.map((description) =>
                       description.includes("http") ? (
                         <li>
