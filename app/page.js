@@ -17,11 +17,12 @@ export default function Home() {
       },
       {
         title: "Etirement de la grenouille",
-        description: ["https://www.youtube.com/watch?v=dUuZLrUOmhU"],
+        description: ["https://www.youtube.com/watch?v=dUuZLrUOmhU", "3 fois 1 minute"],
+
       },
       {
         title: "Etirement de la crêpe comme Aiden",
-        description: ["https://youtu.be/UYsvnlpSLdw?t=315"],
+        description: ["https://youtu.be/UYsvnlpSLdw?t=315", "3 fois 1 minute"],
       },
     ],
     3: [
