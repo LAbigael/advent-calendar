@@ -1,5 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
+import { AttentionSeeker } from "react-awesome-reveal";
+
 import Image from "next/image";
 
 export default function Home() {
@@ -84,19 +86,20 @@ export default function Home() {
     >
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
         {reveal ? (
-          <div>
-            {workout.map((workout) => (
-              <div className="mb-4">
-                <h1 className="text-2xl font-bold">{workout.title}</h1>
-                <ul className="font-semibold">
-                  {workout.description.map((description) => (
-                    <li>{description}</li>
-
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+          <AttentionSeeker effect="tada">
+            <div className="flex flex-col ">
+              {workout.map((workout) => (
+                <div className="mb-4">
+                  <h1 className="text-2xl font-bold">{workout.title}</h1>
+                  <ul className="font-semibold">
+                    {workout.description.map((description) => (
+                      <li>{description}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </AttentionSeeker>
         ) : (
           <button
             type="button"
