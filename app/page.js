@@ -17,8 +17,10 @@ export default function Home() {
       },
       {
         title: "Etirement de la grenouille",
-        description: ["https://www.youtube.com/watch?v=dUuZLrUOmhU", "3 fois 1 minute"],
-
+        description: [
+          "https://www.youtube.com/watch?v=dUuZLrUOmhU",
+          "3 fois 1 minute",
+        ],
       },
       {
         title: "Etirement de la crêpe comme Aiden",
@@ -72,6 +74,17 @@ export default function Home() {
   };
   const [workout, setWorkout] = useState(null);
   const [reveal, setReveal] = useState(false);
+  const [shake, setShake] = useState(false);
+
+  const revealWorkout = () => {
+    setShake(true);
+    setTimeout(() => {
+      setReveal(true);
+      setShake(false);
+    }, 1100);
+  }
+  console.log("shake", shake);
+  console.log("reveal", reveal);
 
   useEffect(() => {
     const today = new Date();
@@ -82,21 +95,36 @@ export default function Home() {
 
   return (
     <main
-      onClick={() => setReveal(true)}
       className="flex min-h-screen flex-col items-center justify-center p-24"
     >
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] ">
         {reveal ? (
           <AttentionSeeker effect="tada">
             <div className="flex flex-col ">
-                <h1 className="flex justify-center text-3xl mb-4">Entrainement {new Date().getDate()} décembre</h1>
+              <h1 className="flex flex-col items-center justify-center text-2xl font-bold mb-4">
+                <Image
+                  className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+                  src="/gift.png"
+                  alt="Next.js Logo"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                Entrainement {new Date().getDate()} décembre
+              </h1>
               {workout.map((workout) => (
                 <div className="mb-4">
-                  <h1 className="text-2xl font-semibold">{workout.title}</h1>
+                  <h1 className="text-xl font-semibold">{workout.title}</h1>
                   <ul className="text-lg">
-                    {workout.description.map((description) => (
-                      <li>{description}</li>
-                    ))}
+                    {workout.description.map((description) =>
+                      description.includes("http") ? (
+                        <li>
+                          <a href={description}>{description}</a>
+                        </li>
+                      ) : (
+                        <li>{description}</li>
+                      )
+                    )}
                   </ul>
                 </div>
               ))}
@@ -106,17 +134,30 @@ export default function Home() {
           <button
             type="button"
             className="z-50 cursor-pointer"
-            onClick={() => setReveal(true)}
+            onClick={() => revealWorkout()}
           >
-            <Image
-              className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-              src="/gift.png"
-              alt="Next.js Logo"
-              width={180}
-              height={37}
-              priority
-            />
-          </button>
+            {shake ? (
+              <AttentionSeeker effect="shake">
+                <Image
+                  className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+                  src="/gift.png"
+                  alt="Next.js Logo"
+                  width={180}
+                  height={37}
+                  priority
+                />
+              </AttentionSeeker>
+            ) :
+                (<Image
+                  className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+                  src="/gift.png"
+                  alt="Next.js Logo"
+                  width={180}
+                  height={37}
+                  priority
+                />
+            )}
+            </button>
         )}
       </div>
     </main>
