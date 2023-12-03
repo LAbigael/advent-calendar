@@ -48,7 +48,7 @@ export default function Home() {
         title: "Blocage into dynamic",
         description: [
           "Tu bloques à 90° pendant 3 secondes",
-          "Tu redescent, et fais une traction dynamique directement",
+          "Tu redescends, et fais une traction dynamique directement",
           "Répète jusqu'à échec",
           "3 séries, 1 minute de repos entre chaque série",
         ],
