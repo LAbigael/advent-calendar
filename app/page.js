@@ -86,6 +86,16 @@ export default function Home() {
     ],
     5: [
       {
+        title: "Pull up Shrugs",
+        description: [
+          "https://www.youtube.com/shorts/r80W32kushY",
+          "10 reps",
+          "Leste toi si tu peux",
+          "Repos 1 minute",
+          "Tu fais 3 séries",
+        ],
+      },
+      {
         title: "Suspension à un bras alterné",
         description: [
           "Tu fais 10 secondes de suspension à un bras tendu en engageant le plus possible le dos",
