@@ -113,6 +113,36 @@ export default function Home() {
         ],
       },
     ],
+    6: [
+      {
+        title: "7:3",
+        description: [
+          "Ca va piquer les avants bras aujourd'hui",
+          "7 secondes de suspension, 3 secondes de repos",
+          "6 fois",
+          "Repos 2 minutes",
+          "Recommence 4 fois",
+        ],
+      },
+      {
+        title: "Flexion des poignets",
+        description: [
+          "Avec une altere, 6-10kg tu fais 30 secondes de flexion des poignets",
+          "Repos 5 secondes pour changer de main",
+          "Répète 10 fois en tout",
+          "https://www.youtube.com/watch?v=Wh1YOYBWSus",
+        ],
+      },
+      {
+        title: "Si tu te sens chaud, extensions des poignets",
+        description: [
+          "Avec une altere, 4-8kg tu fais 30 secondes d'extension des poignets",
+          "Repos 5 secondes pour changer de main",
+          "Répète 10 fois en tout",
+          "https://www.youtube.com/watch?v=ILTyk1tw6x8",
+        ],
+      },
+    ],
   };
   const [workout, setWorkout] = useState(null);
   const [reveal, setReveal] = useState(false);
