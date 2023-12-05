@@ -95,6 +95,13 @@ export default function Home() {
           "Tu fais 3 séries",
         ],
       },
+      {
+        title: "Routine doigts Emil Abrahamsson",
+        description: [
+          "Tu suis la vidéo c'est tranquille et ça fait du bien",
+          "https://www.youtube.com/watch?v=3FNZdixeuZw",
+        ],
+      },
     ],
   };
   const [workout, setWorkout] = useState(null);
