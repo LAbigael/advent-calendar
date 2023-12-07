@@ -143,7 +143,7 @@ export default function Home() {
         ],
       },
     ],
-    7 : [
+    7: [
       {
         title: "Routine yoga pour les hanches",
         description: [
@@ -151,6 +151,8 @@ export default function Home() {
           "Ca dur 30 minutes, j'ai pas encore testé mais ça a l'air bien",
           "Aujourd'hui, on prend le temps, namaste",
         ],
+      },
+    ],
     8: [
       {
         title: "Rotation externe des épaules",
@@ -177,10 +179,7 @@ export default function Home() {
       },
       {
         title: "Etirement de la crêpe comme Aidan",
-        description: [
-          "https://youtu.be/UYsvnlpSLdw?t=315",
-          "3 fois 1 minute",
-        ],
+        description: ["https://youtu.be/UYsvnlpSLdw?t=315", "3 fois 1 minute"],
       },
     ],
   };
