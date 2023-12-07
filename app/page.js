@@ -145,10 +145,9 @@ export default function Home() {
     ],
     7: [
       {
-        title: "Routine yoga pour les hanches",
+        title: "Routine mobilité de Shauna <3",
         description: [
-          "https://www.youtube.com/watch?v=dZ8ZfFImZJc",
-          "Ca dur 30 minutes, j'ai pas encore testé mais ça a l'air bien",
+          "https://www.youtube.com/watch?v=2Ycydyru72M",
           "Aujourd'hui, on prend le temps, namaste",
         ],
       },
