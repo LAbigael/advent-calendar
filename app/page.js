@@ -143,9 +143,17 @@ export default function Home() {
         ],
       },
     ],
-    7: [
+    7 : [
       {
-        title: "Rotataion externe des épaules",
+        title: "Routine yoga pour les hanches",
+        description: [
+          "https://www.youtube.com/watch?v=dZ8ZfFImZJc",
+          "Ca dur 30 minutes, j'ai pas encore testé mais ça a l'air bien",
+          "Aujourd'hui, on prend le temps, namaste",
+        ],
+    8: [
+      {
+        title: "Rotation externe des épaules",
         description: [
           "https://youtu.be/As_nIl4VcUQ?si=SEi9L3Nz_32jssss&t=436",
           "10 reps, 3 séries sur chaque bras",
