@@ -181,6 +181,31 @@ export default function Home() {
         description: ["https://youtu.be/UYsvnlpSLdw?t=315", "3 fois 1 minute"],
       },
     ],
+    9: [
+      {
+        title: "Tractions lestées",
+        description: [
+          "Ca s'explique tout seul, tu fais 3 séries de 5 reps",
+        ],
+      },
+      {
+        title: "Suspensions lestées 16 mm",
+        description: [
+          "Tu fais 3 séries de 10 secondes de suspension lestée à 16 mm",
+        ],
+      },
+      {
+        title: "Atelier fabrication de pinch",
+        description: [
+          "On se fait une pinch maison avec un block de bois et un crochet",
+          "Un truc qu'on attache aux poids et qu'on soulève",
+        ],
+      },
+      {
+        title: "Etirement de la crêpe comme Aidan",
+        description: ["https://youtu.be/UYsvnlpSLdw?t=315", "3 fois 1 minute"],
+      },
+    ],
   };
   const [workout, setWorkout] = useState(null);
   const [reveal, setReveal] = useState(false);
