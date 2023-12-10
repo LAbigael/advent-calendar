@@ -206,6 +206,14 @@ export default function Home() {
         description: ["https://youtu.be/UYsvnlpSLdw?t=315", "3 fois 1 minute"],
       },
     ],
+    10: [
+      {
+        title: "Repos",
+        description: [
+          "Vas faire une balade, ou un truc cool, ou rien, c'est toi qui vois",
+        ],
+      },
+    ],
   };
   const [workout, setWorkout] = useState(null);
   const [reveal, setReveal] = useState(false);
