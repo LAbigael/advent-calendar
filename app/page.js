@@ -184,9 +184,7 @@ export default function Home() {
     9: [
       {
         title: "Tractions lestées",
-        description: [
-          "Ca s'explique tout seul, tu fais 3 séries de 5 reps",
-        ],
+        description: ["Ca s'explique tout seul, tu fais 3 séries de 5 reps"],
       },
       {
         title: "Suspensions lestées 16 mm",
@@ -211,6 +209,68 @@ export default function Home() {
         title: "Repos",
         description: [
           "Vas faire une balade, ou un truc cool, ou rien, c'est toi qui vois",
+        ],
+      },
+    ],
+    11: [
+      {
+        title: "Tractions lestées",
+        description: [
+          "Ca s'explique tout seul, tu fais 3 séries de 5 reps",
+          "Repos 3 minutes entre chaque série",
+        ],
+      },
+      {
+        title: "Suspensions lestées 16 mm",
+        description: [
+          "Tu fais 3 séries de 10 secondes de suspension lestée à 16 mm, si 10 kg c'est facile, tu remplis un sac à dos avec des livres",
+          "Repos 3 minutes entre chaque série",
+        ],
+      },
+    ],
+    12: [
+      {
+        title: "Routine mobilité de Shauna <3",
+        description: [
+          "https://www.youtube.com/watch?v=2Ycydyru72M",
+          "Aujourd'hui, on prend le temps, namaste",
+        ],
+      },
+    ],
+    13: [
+      {
+        title: "Rotation externe des épaules",
+        description: [
+          "https://youtu.be/As_nIl4VcUQ?si=SEi9L3Nz_32jssss&t=436",
+          "10 reps, 3 séries sur chaque bras",
+          "Repos 30 secondes entre chaque bras",
+        ],
+      },
+      {
+        title: "Shoulder press",
+        description: [
+          "https://www.youtube.com/shorts/eJqjNVmR238",
+          "10 reps, 3 séries sur chaque bras",
+          "Repos 1 minute entre chaque bras",
+        ],
+      },
+      {
+        title: "Etirement des épaules chargées",
+        description: [
+          "https://youtu.be/As_nIl4VcUQ?si=LsXQ3GCRrWfQI4uf&t=518",
+          "2 fois 10 reps",
+        ],
+      },
+      {
+        title: "Etirement de la crêpe comme Aidan",
+        description: ["https://youtu.be/UYsvnlpSLdw?t=315", "3 fois 1 minute"],
+      },
+    ],
+    14: [
+      {
+        title: "Repos",
+        description: [
+          "C'est bon, la pelote c'est dur déjà",
         ],
       },
     ],
