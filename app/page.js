@@ -313,7 +313,7 @@ export default function Home() {
                 />
                 Entrainement {new Date().getDate()} décembre
               </h1>
-              {workout.map((workout) => (
+              {workout ? workout.map((workout) => (
                 <div className="mb-4">
                   <h1 className="text-lg font-semibold">{workout.title}</h1>
                   <ul className="">
@@ -328,7 +328,7 @@ export default function Home() {
                     )}
                   </ul>
                 </div>
-              ))}
+              )): <h1 className="text-lg font-semibold">Pas encore dispo, reviens plus tard</h1>}
             </div>
           </AttentionSeeker>
         ) : (
