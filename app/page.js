@@ -353,6 +353,25 @@ export default function Home() {
         ],
       },
     ],
+    20: [
+      {
+        title: "Suspension 16mm lestées",
+        description: [
+          "Tu fais 5 séries de 10 secondes de suspension lestée à 16 mm",
+          "Faut que ce soit effort max",
+          "Repos 3 minutes entre chaque série",
+        ],
+      },
+      {
+        title: "Flexion des poignets",
+        description: [
+          "Avec une altere, 4-8kg tu fais 30 secondes de flexion des poignets",
+          "Repos 5 secondes pour changer de main",
+          "Répète 10 fois en tout",
+          "https://www.youtube.com/watch?v=Wh1YOYBWSus",
+        ],
+      },
+    ],
   };
   const [workout, setWorkout] = useState(null);
   const [reveal, setReveal] = useState(false);
