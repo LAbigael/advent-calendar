@@ -269,8 +269,56 @@ export default function Home() {
     14: [
       {
         title: "Repos",
+        description: ["C'est bon, la pelote c'est dur déjà"],
+      },
+    ],
+    16: [
+      {
+        title: "Plank drag",
         description: [
-          "C'est bon, la pelote c'est dur déjà",
+          "https://www.youtube.com/watch?v=BrD1MzJxY6A",
+          "Tu fais 3 séries de 10 répétitions (avec le poids que tu trouves)",
+        ],
+      },
+      {
+        title: "Montés l-sit",
+        description: [
+          "En étant suspendu, tu montes les jambes tendues jusqu'à ce qu'elles soient parallèles au sol",
+          "Tu fais 3 séries de 10 répétitions",
+        ],
+      },
+      {
+        title: "Deadlift bulgare",
+        description: [
+          "https://www.youtube.com/watch?v=lI8-igvsnVQ",
+          "Tu fais 3 séries de 10 répétitions sur chaque jambe",
+        ],
+      },
+    ],
+    17: [
+      {
+        title: "Densité de suspension",
+        description: [
+          "30 secondes de suspension à quatre doigts",
+          "3 minutes de repos",
+          "Choisis une préhension où tu échoues à 30 secondes",
+        ],
+      },
+      {
+        title: "Shoulder shrugs",
+        description: [
+          "https://www.youtube.com/watch?v=7XwKnk16Zbs",
+          "Tu fais 3 séries de 10 répétitions, tu peux te lester sinon c'est trop facile",
+        ],
+      },
+      {
+        title: "Suspension à un bras alterné",
+        description: [
+          "Tu fais 10 secondes de suspension à un bras tendu en engageant le plus possible le dos",
+          "Tu changes de bras avec 5 secondes de repos",
+          "Répète 3 fois chaque bras",
+          "Repos 1 minute",
+          "Tu fais 3 séries",
         ],
       },
     ],
@@ -313,22 +361,28 @@ export default function Home() {
                 />
                 Entrainement {new Date().getDate()} décembre
               </h1>
-              {workout ? workout.map((workout) => (
-                <div className="mb-4">
-                  <h1 className="text-lg font-semibold">{workout.title}</h1>
-                  <ul className="">
-                    {workout.description.map((description) =>
-                      description.includes("http") ? (
-                        <li>
-                          <a href={description}>{description}</a>
-                        </li>
-                      ) : (
-                        <li>{description}</li>
-                      )
-                    )}
-                  </ul>
-                </div>
-              )): <h1 className="text-lg font-semibold">Pas encore dispo, reviens plus tard</h1>}
+              {workout ? (
+                workout.map((workout) => (
+                  <div className="mb-4">
+                    <h1 className="text-lg font-semibold">{workout.title}</h1>
+                    <ul className="">
+                      {workout.description.map((description) =>
+                        description.includes("http") ? (
+                          <li>
+                            <a href={description}>{description}</a>
+                          </li>
+                        ) : (
+                          <li>{description}</li>
+                        )
+                      )}
+                    </ul>
+                  </div>
+                ))
+              ) : (
+                <h1 className="text-lg font-semibold">
+                  Pas encore dispo, reviens plus tard
+                </h1>
+              )}
             </div>
           </AttentionSeeker>
         ) : (
