@@ -322,6 +322,37 @@ export default function Home() {
         ],
       },
     ],
+    18: [
+      {
+        title: "Tractions lestées",
+        description: ["Ca s'explique tout seul, tu fais 3 séries de 5 reps"],
+      },
+      {
+        title: "Shoulder press",
+        description: [
+          "https://www.youtube.com/shorts/eJqjNVmR238",
+          "10 reps, 3 séries sur chaque bras",
+          "Repos 1 minute entre chaque bras",
+        ],
+      },
+      {
+        title: "Rotation externe des épaules",
+        description: [
+          "https://youtu.be/As_nIl4VcUQ?si=SEi9L3Nz_32jssss&t=436",
+          "10 reps, 3 séries sur chaque bras",
+          "Repos 30 secondes entre chaque bras",
+        ],
+      },
+    ],
+    19: [
+      {
+        title: "Routine mobilité de Shauna <3",
+        description: [
+          "https://www.youtube.com/watch?v=2Ycydyru72M",
+          "Aujourd'hui, on prend le temps, namaste",
+        ],
+      },
+    ],
   };
   const [workout, setWorkout] = useState(null);
   const [reveal, setReveal] = useState(false);
