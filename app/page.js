@@ -372,6 +372,24 @@ export default function Home() {
         ],
       },
     ],
+    20: [
+      {
+        title: "Gainage encore !!",
+        description: [
+          "Plank drag",
+          "Dog bird",
+          "Montés l-sit",
+          "Deadlift bulgare",
+          "Copenhaguen plank",
+          "https://youtu.be/f_J48vXCaN4?si=XzeQ1QCF662zN2rC&t=122)",
+          "",
+          "On enchaine le circuit 3 fois",
+          "10 secondes de repos entre chaque exercice",
+          "1-2 minute de repos entre chaque série",
+          "10 reps pour chaque exercice (ou 20 secondes de pour le Copenhaguen plank)",
+        ],
+      },
+    ],
   };
   const [workout, setWorkout] = useState(null);
   const [reveal, setReveal] = useState(false);
